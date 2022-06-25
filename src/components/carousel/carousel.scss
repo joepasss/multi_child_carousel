@@ -1,0 +1,63 @@
+div.carousel-container {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+
+  div.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    button.btn {
+      width: 3rem;
+      height: 3rem;
+      border: none;
+      background-color: white;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 2rem;
+
+      &:hover {
+        color: white;
+        background-color: rgb(104, 104, 255);
+      }
+    }
+  }
+
+  div.image-container {
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgb(180, 180, 180);
+
+    ul.list {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      display: grid;
+      grid-template-columns: repeat(auto-fit, min-content);
+      grid-template-rows: min-content;
+      grid-auto-flow: column;
+      gap: 2rem;
+
+      li {
+        width: 10rem;
+        height: 10rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: white;
+        border-radius: 1rem;
+        z-index: 1;
+      }
+    }
+  }
+}
